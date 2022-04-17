@@ -8,13 +8,18 @@
   <title>Derya'nın Web Sitesi</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Open+Sans:ital,wdth,wght@1,91.3,495&family=Square+Peg&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Akshar:wght@300&family=Open+Sans:ital,wdth,wght@1,91.3,495&family=Square+Peg&display=swap"
+    rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </head>
 
@@ -53,7 +58,7 @@
     height: auto;
   }
 
-  .clearfix::after{
+  .clearfix::after {
     content: "";
     display: block;
     clear: both;
@@ -61,12 +66,13 @@
 
   header {
     height: 46rem;
-    background-color: rgb(34, 140, 178);
+
+    border-radius: 100px;
   }
 
   header .bg-image {
     position: absolute;
-    background-image: url("mabel.jpg");
+    background-image: url(https://www.dogrutercih.com.tr/app/Bot/thumbnail.php?resimyol=26.12.2018-8e1519f832112a0f037144df60ad98835c2.jpg&goster=1&oran=100&s=0&th=1);
     background-size: cover;
     background-position: center;
     height: 46rem;
@@ -95,6 +101,17 @@
     color: black;
   }
 
+  .btnn:hover {
+    background-color: aquamarine;
+    color: black;
+
+  }
+
+  .btn2:hover {
+    color: rgb(11, 78, 10);
+    font-size: 25px;
+  }
+
   #section-a {
     background-color: antiquewhite;
     color: rgb(165, 79, 21);
@@ -114,6 +131,20 @@
     color: brown;
     margin-bottom: 1.5rem;
 
+  }
+
+  .lili:hover {
+    font-size: 28px;
+  }
+
+  #face {
+    font-size: 100px;
+    color: yellowgreen;
+  }
+
+  #PC {
+    font-size: 50px;
+    color: rgb(72, 255, 0);
   }
 
   .col-content {
@@ -146,28 +177,29 @@
   }
 
 
-  @media screen and (min-width:800px){
-    html{
+  @media screen and (min-width:800px) {
+    html {
       font-size: 9px;
     }
   }
 
   @media screen and (min-width:1200px) {
-    html{
+    html {
       font-size: 13px;
     }
-    #section-b li{
+
+    #section-b li {
       width: 28%;
       margin: 1%;
       display: inline-block;
     }
-    .box{
+
+    .box {
       width: 50%;
       float: left;
 
     }
   }
-  
 </style>
 
 <body>
@@ -176,53 +208,65 @@
   <header>
     <div class="bg-image"></div>
     <div class="content">
-      <h1> <i class="fa-solid fa-face-cowboy-hat"></i> Derya Kesgin</h1>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem dolor voluptatibus distinctio.</p>
-      <a href="hakkımda.html" class="btn">Read More</a>
+      <h1>Hi! I Am Derya Kesgin</h1><i id="face" class="fa-solid fa-face-grin-beam"></i>
+      <p>
+      <h2>A Software Engineer</h2><i id="PC" class="fa-solid fa-laptop-code"></i></p>
+      <a href="benitanıyın.html" class="btn">Read More</a>
     </div>
   </header>
+
+
 
   <main>
 
     <section id="section-a">
       <div class="contant">
-        <h2>Github'ım</h2>
-        <p>Projelerimi burada paylasıyorum.</p>
-        <a style="color: blueviolet; text-decoration: underline;" href="github.html">github'ım</a>
+        <h2>Github'ım</h2><i class="fa-brands fa-github"></i>
+        <p style="font-size: 50px;">Projelerimi burada paylasıyorum.</p>
+        <a style="color: blueviolet; text-decoration: underline; font-size: 40px;" href="github.html" class="btn2">github'ım</a>
       </div>
     </section>
 
     <section id="section-b">
       <ul>
-        <li>
+        <li class="lili">
           <div class="col">
-            
+            <img src="https://www.kariyer.net/kariyer-rehberi/wp-content/uploads/2016/07/ozgecm%C4%B1s2545.jpg"
+                alt="resim">
             <div class="col-content">
-              <h2>Özgecmis</h2>
+
               <h3 class="col-title">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <a href="özgecmiş.html">özgecmiş</a>
+              <a href="özgeçmiş.html"><h2>özgeçmiş</h2></a>
               </h3>
             </div>
           </div>
         </li>
-        <li>
+        <li class="lili">
           <div class="col">
-            <img src="" alt="">
+            <img src="https://www.birendustrimuhendisi.com/wp-content/uploads/2021/01/Proje-Yonetimi-Nedir.png"
+              alt="resim">
             <div class="col-content">
+
               <h3 class="col-title">
-                
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+
+                <a href="projeler.html" class="btnn">
+                  <h2>yaptıklarım</h2>
+                </a>
               </h3>
             </div>
           </div>
         </li>
-        <li>
+        <li class="lili">
           <div class="col">
-            <img src="website/toga" alt="">
+            <img src="https://i4.hurimg.com/i/hurriyet/75/750x422/620010284e3fe118b805b6ce.jpg" alt="resim">
             <div class="col-content">
+
               <h3 class="col-title">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                <a href="hakkımda.html" class="btnn">
+                  <h2>ben..</h2>
+                </a>
               </h3>
             </div>
           </div>
@@ -232,20 +276,24 @@
 
     <section id="section-c">
       <div class="content">
-        <h2>  <i class="fa-solid fa-circle-info"></i> Bilgilendirme</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolor reiciendis ipsum?</p>
+        <h2> <i class="fa-solid fa-circle-info"></i> Bilgilendirme</h2>
+        <p>İnönü üniversitesi <br>
+          Mühendislik Fakültesi <br>
+          Yazılım Mühendisliği Bölümü <br>
+          1.sınıf Öğrencisi</p>
       </div>
     </section>
 
     <section id="section-d" class="clearfix">
       <div class="box">
-        <h2 class="contant-title"></h2>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, veritatis.</p>
+        <h2 class="contant-title"><i class="fa-solid fa-phone"></i> İletişim için</h2>
+
+        <p>0111-101-11-00</p>
       </div>
       <div class="box">
-        <h2 class="content-title"> <i class="fa-solid fa-phone"></i> İletisim icin</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem recusandae quos id tenetur repellendus porro.
-          <br> <i class="fa-brands fa-instagram"></i>derya_kesgn
+        <h2 class="content-title"> Ulaşabilmeniz için</h2>
+
+        <br> <i class="fa-brands fa-instagram"></i>derya_kesgn
         </p>
       </div>
     </section>
@@ -253,7 +301,7 @@
   </main>
 
   <footer>
-    <div>Lorem, ipsum dolor.</div>
+
     <div>powered by <a href="#">Derya Kesgin</a></div>
   </footer>
 
