@@ -6,102 +6,284 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Derya'nın Web Sitesi</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@1,91.3,495&family=Square+Peg&display=swap"
+    rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
 
 </head>
 
 <style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 7px;
+
+  }
+
   a {
-    color: crimson;
-    font-size: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 20px;
-    text-decoration: double;
+    text-decoration: none;
   }
 
-  a:hover {
-    color: black;
-    background-color: crimson;
-    font-size: 25px;
-  }
-
-  .buton {
-
-    padding: 10px 20px;
-    background-color: rgb(105, 27, 88);
-    color: cornflowerblue;
-    border-radius: 50px;
-
-  }
-
-  .buton:hover {
-    background-color: brown;
-    color: aliceblue;
-  }
-
-  .buton2 {
-    padding: 10px 20px;
-    background-color: white;
-    border: 2px solid blueviolet;
-    color: black;
-    border-radius: 50px;
-
-  }
-
-  div {
-    background-color: chartreuse;
-    height: 550px;
-    text-align: center;
-  }
-
-  i{
+  body {
+    background-color: rgb(42, 7, 7);
     color: white;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Square Peg', cursive;
+    font-size: 1.6rem;
+    line-height: 1.5;
   }
 
+  p {
+    padding: 1.6rem 0;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  .clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  header {
+    height: 46rem;
+    background-color: rgb(34, 140, 178);
+  }
+
+  header .bg-image {
+    position: absolute;
+    background-image: url('website/panda');
+    background-size: cover;
+    background-position: center;
+    height: 46rem;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+  }
+
+  header h1 {
+    padding: 12rem;
+    padding-bottom: 0;
+  }
+
+  .btn {
+    display: inline-block;
+    background: rgb(23, 4, 94);
+    color: white;
+    border: 1px solid rgb(1, 1, 13);
+    padding: 1.6rem 3.2rem;
+    margin: .5rem 0;
+    transition: all 0.4s;
+  }
+
+  .btn:hover {
+    background-color: aquamarine;
+    color: black;
+  }
+
+  #section-a {
+    background-color: antiquewhite;
+    color: rgb(165, 79, 21);
+    padding: 3.2rem 0;
+  }
+
+  #section-b {
+    padding: 2rem;
+  }
+
+  #section-b ul {
+    list-style: none;
+  }
+
+  #section-b li {
+    background-color: aliceblue;
+    color: brown;
+    margin-bottom: 1.5rem;
+
+  }
+
+  .col-content {
+    padding: 1.5rem;
+  }
+
+  #section-c {
+    background-color: aliceblue;
+    color: brown;
+    pad: 5rem;
+  }
+
+  #section-d .box {
+    padding: 5rem;
+  }
+
+  #section-d .box :first-child {
+    background-color: blueviolet;
+
+  }
+
+  footer {
+    padding: 4rem;
+    background-color: black;
+
+  }
+
+  footer a {
+    color: yellowgreen
+  }
+
+
+  @media screen and (min-width:800px){
+    html{
+      font-size: 9px;
+    }
+  }
+
+  @media screen and (min-width:1200px) {
+    html{
+      font-size: 13px;
+    }
+    #section-b li{
+      width: 20%;
+      margin: 1%;
+      display: inline-block;
+    }
+    .box{
+      width: 50%;
+      float: left;
+
+    }
+  }
+  
 </style>
 
 <body>
 
-  <h1>derya</h1>
 
-  <div>
+  <header>
+    <div class="bg-image"></div>
+    <div class="content">
+      <h1> <i class="fa-solid fa-face-cowboy-hat"></i> Derya Kesgin</h1>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem dolor voluptatibus distinctio.</p>
+      <a href="#" class="btn">Read More</a>
+    </div>
+  </header>
 
-    
+  <main>
 
-    <a href="#">link1</a>
-    <a href="#">link2</a>
-    <a href="#">link3</a>
-    <a href="#">link4</a>
+    <section id="section-a">
+      <div class="contant">
+        <h2>Github'ım</h2>
+        <p>Projelerimi burada paylasıyorum.</p>
+      </div>
+    </section>
 
-    <br><br><br>
+    <section id="section-b">
+      <ul>
+        <li>
+          <div class="col">
+            <img src="website/toga" alt="">
+            <div class="col-content">
+              <h3 class="col-title">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </h3>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="col">
+            <img src="website/toga" alt="">
+            <div class="col-content">
+              <h3 class="col-title">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </h3>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="col">
+            <img src="website/toga" alt="">
+            <div class="col-content">
+              <h3 class="col-title">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </h3>
+            </div>
+          </div>
+        </li><li>
+          <div class="col">
+            <img src="website/toga" alt="">
+            <div class="col-content">
+              <h3 class="col-title">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </h3>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
 
-    <button class="buton">
-      <i class="fa-solid fa-house"></i> 
-      anasayfa</button>
-    <button class="buton">
-      <i class="fa-solid fa-circle-info"></i> 
-      bilgi</button>
-    <button class="buton">
-      <i class="fa-solid fa-globe"></i> 
-      kategoriler</button> 
-    <button class="buton">
-      <i class="fa-solid fa-phone"></i> 
-      iletişim</button>
+    <section id="section-c">
+      <div class="content">
+        <h2>  <i class="fa-solid fa-circle-info"></i> Bilgilendirme</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit dolor reiciendis ipsum?</p>
+      </div>
+    </section>
 
-    <br><br><br><br><br><br>
+    <section id="section-d" class="clearfix">
+      <div class="box">
+        <h2 class="contant-title"></h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam, veritatis.</p>
+      </div>
+      <div class="box">
+        <h2 class="content-title"> <i class="fa-solid fa-phone"></i> İletisim icin</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem recusandae quos id tenetur repellendus porro.
+          <br> <i class="fa-brands fa-instagram"></i>derya_kesgn
+        </p>
+      </div>
+    </section>
 
-    <button class="buton2">anasayfa</button>
-    <button class="buton2">hakkımızda</button>
-    <button class="buton2">kategoriler</button>
-    <button class="buton2">iletişim</button>
+  </main>
 
-    <br><br><br>
-    
-    
+  <footer>
+    <div>Lorem, ipsum dolor.</div>
+    <div>powered by <a href="#">Derya Kesgin</a></div>
+  </footer>
+  <br><br><br>
 
-  </div>
+  <!-- <button class="buton">
+    <i class="fa-solid fa-house"></i>
+    anasayfa</button>
+  <button class="buton">
+    <i class="fa-solid fa-circle-info"></i>
+    bilgi</button>
+  <button class="buton">
+    <i class="fa-solid fa-globe"></i>
+    kategoriler</button>
+  <button class="buton">
+    <i class="fa-solid fa-phone"></i>
+    iletişim</button>
+
+  <br><br><br> -->
+
+  <br><br><br>
+
+
+  <br><br><br>
 
 
 </body>
