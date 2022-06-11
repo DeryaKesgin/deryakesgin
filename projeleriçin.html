@@ -9,40 +9,53 @@
 </head>
 
 <style>
-
-@media screen and (min-width:800px) {
-    html {
-      font-size: 9px;
+    @media screen and (min-width:800px) {
+        html {
+            font-size: 9px;
+        }
     }
-  }
 
-  @media screen and (min-width:1200px) {
-    html {
-      font-size: 13px;
+    @media screen and (min-width:1200px) {
+        html {
+            font-size: 13px;
+        }
     }
-}
 
 
     body {
         text-align: center;
         background-color: aqua;
+        font-size: 25px;
     }
-    img{
+
+    img {
         margin-bottom: 1.5rem;
         height: 150px;
         width: 150px;
-        
+
     }
 </style>
 
 <body>
-<h1>projelerim</h1>
 
-    <img src="https://veriakademi.com/images/java-projeleri.jpg" alt="resim">
-    
-    <h3>github'ımı inceleyebilirsiniz.</h3><br>
+    <br><br>
 
-   
+    <h2>My Projects:</h2>
+    <p id="d1"></p>
+
+    <script>
+        const projeler = {
+            prj1: "-My Own Website.",
+            prj2: "-And the Other Little Projects.",
+            P: "You can check my github for detailed information."
+        };
+
+        document.getElementById("d1").innerHTML = projeler.prj1 + "<br>" + "<br>" + projeler.prj2 + "<br>" + "<br>" + "<br>" + "<br>" + projeler.P;
+
+    </script>
+
+
+
 </body>
 
 </html>
