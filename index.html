@@ -28,7 +28,7 @@
 <script>
 $(document).ready(function(){
   $("#BB").click(function(){
-    $("#PP").toggle();
+    $("#PP").toggle("slow");
   });
 });
 </script>
@@ -93,7 +93,7 @@ $(document).ready(function(){
 
   header h1 {
     padding: 4rem;
-    padding-top:2rem;
+    padding-top:1rem;
     padding-bottom: 1rem;
   }
 
@@ -149,13 +149,14 @@ $(document).ready(function(){
   }
 
   #face {
-    font-size: 50px;
-    color: yellowgreen;
+    font-size: 70px;
+    color: rgb(37, 156, 51);
+    padding-top: 3rem;
   }
 
   #PC {
     font-size: 30px;
-    color: rgb(72, 255, 0);
+    color: rgb(75, 174, 88);
   }
 
   .col-content {
@@ -212,7 +213,7 @@ $(document).ready(function(){
 
 
   #BB:hover{
-    background-color: gray;
+    background-color: rgb(230, 120, 193);
   }
 
   .ul00{
@@ -230,10 +231,9 @@ $(document).ready(function(){
 <body>
   <header>
     <div class="bg-image"></div>
-    <div class="content">
-      <h1>Hi! I Am Derya Kesgin<i id="face" class="fa-solid fa-face-grin-beam"></i></h1>
-      <p>
-      <h2>A Software Engineer<i id="PC" class="fa-solid fa-laptop-code"></i></h2></p>
+    <div class="content"><i id="face" class="fa-solid fa-face-grin-beam"></i>
+      <h1>Hi! I Am Derya Kesgin</h1>
+      <h2><i id="PC" class="fa-solid fa-laptop-code"></i>A Software Engineer</h2></p>
 
      
 
@@ -265,8 +265,8 @@ $(document).ready(function(){
       </ul>
       <br><br>
       <div class="contant">
-        <h2>Github'ım</h2><i class="fa-brands fa-github"></i>
-        <p style="font-size: 50px;">Projelerimi burada paylasıyorum.</p>
+        <h2 style="font-size: 70px;"><i class="fa-brands fa-github"></i>Github'ım</h2>
+        <p style="font-size: 35px;">Projelerimi burada paylasıyorum.</p>
         <a style="color: blueviolet; text-decoration: underline; font-size: 40px;" href="github.html"
           class="btn2">github'ım</a>
       </div>
@@ -276,7 +276,7 @@ $(document).ready(function(){
       <ul>
         <li class="lili">
           <div class="col">
-            <img src="https://www.kariyer.net/kariyer-rehberi/wp-content/uploads/2016/07/ozgecm%C4%B1s2545.jpg"
+            <img style="height:250px ;" src="https://www.kariyer.net/kariyer-rehberi/wp-content/uploads/2016/07/ozgecm%C4%B1s2545.jpg"
               alt="resim">
             <div class="col-content">
 
@@ -294,7 +294,7 @@ $(document).ready(function(){
         
         <li class="lili">
           <div class="col">
-            <img src="https://www.birendustrimuhendisi.com/wp-content/uploads/2021/01/Proje-Yonetimi-Nedir.png"
+            <img style="height:250px ;" src="https://www.birendustrimuhendisi.com/wp-content/uploads/2021/01/Proje-Yonetimi-Nedir.png"
               alt="resim">
             <div class="col-content">
                  <h3 class="col-title">
@@ -311,7 +311,7 @@ $(document).ready(function(){
 
         <li class="lili">
           <div class="col">
-            <img src="https://i4.hurimg.com/i/hurriyet/75/750x422/620010284e3fe118b805b6ce.jpg" alt="resim">
+            <img style="height:250px ;" src="https://www.kooplog.com/wp-content/uploads/2020/04/15756845711318125.jpg" alt="resim">
             <div class="col-content">
 
               <h3 class="col-title">
@@ -389,7 +389,7 @@ $(document).ready(function(){
     <br><br><br>
     
     
-    <button style="color:rgb(97, 22, 22) ;" id="BB">Click to toggle the small paragraph</button>
+    <button style="color:rgb(97, 22, 22) ; border-radius: 40px; height: 50px;" id="BB">Click to toggle the small paragraph</button>
     <h1 style="color:rgb(169, 163, 169) ;" id="PP">Software Engineer Derya Kesgin</h1>
 
     <section id="section-d" class="clearfix">
